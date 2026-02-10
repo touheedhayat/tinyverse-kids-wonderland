@@ -1,12 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import HeroBanner from "@/components/home/HeroBanner";
+import FeaturedCollections from "@/components/home/FeaturedCollections";
+import TrendingProducts from "@/components/home/TrendingProducts";
+import SeasonalOffers from "@/components/home/SeasonalOffers";
+import BestSellers from "@/components/home/BestSellers";
+import CustomerReviews from "@/components/home/CustomerReviews";
+import Newsletter from "@/components/home/Newsletter";
+import InstagramGallery from "@/components/home/InstagramGallery";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <HeroBanner />
+        <FeaturedCollections />
+        <TrendingProducts />
+        <SeasonalOffers />
+        <BestSellers />
+        <CustomerReviews />
+        <Newsletter />
+        <InstagramGallery />
+      </main>
+      <Footer />
     </div>
   );
 };
