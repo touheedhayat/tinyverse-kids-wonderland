@@ -8,6 +8,7 @@ import BestSellers from "@/components/home/BestSellers";
 import CustomerReviews from "@/components/home/CustomerReviews";
 import Newsletter from "@/components/home/Newsletter";
 import InstagramGallery from "@/components/home/InstagramGallery";
+import WhyTinyVerse from "@/components/home/WhyTinyVerse";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <Header />
       <main>
         <HeroBanner />
+        <WhyTinyVerse />
         <FeaturedCollections />
         <TrendingProducts />
         <SeasonalOffers />
